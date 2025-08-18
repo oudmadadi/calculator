@@ -1,18 +1,18 @@
 def addition (a, b):
     c = a + b
-    return c
+    print (c)
 
 def subtraction (a, b):
     c = a - b
-    return c
+    print (c)
 
 def multiplication (a, b):
     c = a * b
-    return c
+    print (c)
 
 def divison (a, b):
     c = a / b
-    return c
+    print (c)
 
 d = str(input("Choose your function?"))
 while True:
