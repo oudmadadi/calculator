@@ -14,18 +14,27 @@ def divison (a, b):
     c = a / b
     print (c)
 
-d = str(input("Choose your function?"))
+
 while True:
-    a = float(input("Enter First Number: "))
-    b = float(input("Enter Second Number: "))
-    if d == "addition":
+    print ("Calculator")
+    print ("1. Addition    (+)")
+    print ("2. Subtraction (-)")
+    print ("3. Multiply    (*)")
+    print ("4. Division    (/)")
+    d = float (input("Which one?"))
+    a = float (input("Enter First Number: "))
+    b = float (input("Enter Second Number: "))
+    
+    if d == 1:
         addition (a, b)
-    elif d == "subtraction":
+    elif d == 2:
         subtraction (a, b)
-    elif d == "multiplication":
+    elif d == 3:
         multiplication (a, b)
-    elif d == "division":
+    elif d == 4:
         divison (a, b)
     else:
-        print ("Error")
+        print ("Error!")
+    
+    
     
