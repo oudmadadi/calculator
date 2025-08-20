@@ -14,6 +14,10 @@ def divison (a, b):
     c = a / b
     print (c)
 
+def exponent (a, b):
+    c = a ** b
+    print (c)
+
 
 while True:
     print ("Calculator")
@@ -21,7 +25,8 @@ while True:
     print ("2. Subtraction (-)")
     print ("3. Multiply    (*)")
     print ("4. Division    (/)")
-    d = float (input("Which one?"))
+    print ("5. Exponent    (^)")
+    d = float (input("Which one? "))
     a = float (input("Enter First Number: "))
     b = float (input("Enter Second Number: "))
     
@@ -33,6 +38,8 @@ while True:
         multiplication (a, b)
     elif d == 4:
         divison (a, b)
+    elif d == 5:
+        exponent (a, b)
     else:
         print ("Error!")
     
